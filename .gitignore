@@ -17,3 +17,4 @@ __pycache__/
 Thumbs.db
 
 homepage-backup.txt
+*.before-bom-fix

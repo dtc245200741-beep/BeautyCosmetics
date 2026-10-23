@@ -73,6 +73,7 @@
       - ./nginx/certs:/etc/nginx/certs:ro
     networks:
       - de3_frontend
+      - de3_monitoring
     depends_on:
       - wordpress
       - phpmyadmin

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Plugin Name: Beauty Products Dynamic
  * Description: Hiển thị danh sách sản phẩm mỹ phẩm.
