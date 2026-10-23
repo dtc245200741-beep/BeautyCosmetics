@@ -1,6 +1,5 @@
 /* ===== Glow Beauty - Typography ===== */
 
-/* Font chữ toàn website */
 body,
 button,
 input,
@@ -9,7 +8,6 @@ textarea {
   color: #39323a;
 }
 
-/* Tiêu đề chính */
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -18,7 +16,6 @@ h1 {
   color: #30232b;
 }
 
-/* Tiêu đề các phần */
 h2 {
   font-size: 30px;
   font-weight: 650;
@@ -33,7 +30,6 @@ h3 {
   color: #393039;
 }
 
-/* Nội dung dễ đọc */
 p {
   font-size: 16px;
   line-height: 1.8;
@@ -47,7 +43,7 @@ p {
   font-weight: 500;
 }
 
-/* Nút màu hồng đồng bộ thương hiệu */
+/* Buttons */
 button,
 .ast-button,
 .wp-block-button__link {
@@ -56,14 +52,20 @@ button,
   border-radius: 6px;
 }
 
-/* Tiêu đề sản phẩm */
+/* Product cards */
 .beauty-product-card h3 {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.3px;
 }
 
-/* Điện thoại */
+/* Images responsive */
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Mobile layout ===== */
 @media (max-width: 700px) {
   h1 {
     font-size: 30px;
@@ -80,44 +82,9 @@ button,
   p {
     font-size: 15px;
   }
-}
-/* Tối ưu giao diện điện thoại */
-@media (max-width: 700px) {
-  .wp-block-columns {
-    gap: 20px !important;
-    margin-block: 16px !important;
-  }
 
-  .wp-block-heading {
-    overflow-wrap: break-word;
-  }
-
-  .wp-block-image img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* Thu gọn khoảng cách phần đầu trang trên điện thoại */
-@media (max-width: 700px) {
   .wp-block-columns {
     gap: 16px !important;
-    margin-top: 12px !important;
-    margin-bottom: 12px !important;
-  }
-
-  .wp-block-columns h1,
-  .wp-block-columns h2,
-  .wp-block-columns h3 {
-    margin-top: 8px !important;
-    margin-bottom: 12px !important;
-  }
-}
-
-/* ===== Fix khoang cach giao dien mobile ===== */
-@media (max-width: 700px) {
-  .wp-block-columns {
-    gap: 12px !important;
     margin-top: 12px !important;
     margin-bottom: 12px !important;
   }
@@ -138,8 +105,7 @@ button,
     margin-top: 12px !important;
   }
 
-  .wp-block-columns img {
-    max-width: 100%;
-    height: auto;
+  .wp-block-heading {
+    overflow-wrap: break-word;
   }
 }
